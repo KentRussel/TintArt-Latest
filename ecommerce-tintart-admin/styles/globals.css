@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{
+    max-height: 100%;
+}
+input, textarea, select{
+    @apply border border-gray-200 rounded-sm px-1 w-full py-2 px-3;
+    @apply mb-2;
+}
+input:focus, textarea:focus, select:focus{
+    @apply border-blue-900;
+}
+h1{
+    @apply text-gray-800 mb-4 text-xl font-bold;
+}
+h2{
+    @apply text-gray-800 mt-6 mb-2 text-lg font-bold;
+}
+label{
+    @apply text-gray-600 text-sm;
+}
+.btn-primary{
+    @apply bg-bgColor font-medium text-lighter px-5 py-3 rounded-[4px] shadow-sm;
+}
+table.basic{
+    @apply w-full bg-white rounded-[4px] shadow-md;
+}
+table.basic thead tr td,
+table.basic thead tr th
+{
+    @apply text-base text-gray-600 uppercase border-b border-gray-300 px-8 py-3 font-bold tracking-wide;
+}
+table.basic tr td{
+    @apply px-8 py-4;
+}
+table.basic a{
+    @apply px-6 rounded-[4px] inline-flex mx-2 items-center gap-1 text-sm py-3;
+}
+table.basic .blank {
+    @apply px-24;
+}
+.btn-default, .btn-red{
+    @apply px-4 py-1 rounded-[4px];
+}
+.btn-red{
+    @apply bg-red-200 font-medium text-red-600 px-4 py-2 rounded-[4px] shadow-sm;
+}
+.btn-green{
+    @apply bg-emerald-200 font-medium text-emerald-600 px-4 py-2 rounded-[4px] shadow-sm;
+}
+.btn-default{
+    @apply bg-white text-gray-800 font-medium px-4 py-2 rounded-[4px] border border-gray-200 shadow-sm;
+}
